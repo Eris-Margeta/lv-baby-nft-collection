@@ -1,0 +1,63 @@
+{
+  "$schema": "https://beta.frontmatter.codes/frontmatter.schema.json",
+  "frontMatter.taxonomy.contentTypes": [
+    {
+      "name": "projects",
+      "previewPath": "'projects'",
+      "pageBundle": false,
+      "clearEmpty": true,
+      "fields": [
+        {
+          "name": "title",
+          "type": "string",
+          "single": true,
+          "required": true
+        },
+        {
+          "name": "image",
+          "type": "image",
+          "required": true,
+          "isPreviewImage": true
+        },
+        {
+          "name": "date",
+          "type": "datetime",
+          "default": "{{now}}",
+          "required": true
+        },
+        {
+          "name": "tag",
+          "type": "list",
+          "required": true
+        },
+       {
+        "name": "rarity",
+        "type": "string",
+        "single": true,
+        "required": true
+      }, 
+      {
+        "name": "value",
+        "type": "string",
+        "single": true,
+        "required": true
+      }
+      ]
+    }
+  ],
+  "frontMatter.framework.id": "astro",
+  "frontMatter.preview.host": "http://localhost:4321",
+  "frontMatter.content.pageFolders": [
+    {
+      "title": "projects",
+      "path": "[[workspace]]/src/content/projects",
+      "contentTypes": [
+        "projects"
+      ]
+    }
+  ],
+  "frontMatter.content.publicFolder": {
+    "path": "src/assets",
+    "relative": true
+  }
+}
